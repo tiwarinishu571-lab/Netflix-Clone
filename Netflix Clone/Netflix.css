@@ -1,0 +1,463 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+header {
+    height: 100vh;
+    background:
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.699),
+            rgba(0, 0, 0, 0.8)),
+        url("./assets/background-image/bg-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/* navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 20px 20px;
+}
+
+.left-side {
+    margin-left: 80px;
+}
+
+/* logo */
+.left-side img {
+    height: 50px;
+    width: 150px;
+    margin: 60px;
+    padding-top: 10px;
+}
+
+.select-lang {
+    border-radius: 5px;
+    border: 2px gray;
+    padding: 5px;
+    width: 100px;
+    margin-right: 2px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+option {
+    color: black;
+}
+
+.language button {
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    width: 100px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.language button:hover {
+    background-color:
+        rgb(208, 13, 13);
+    color: white;
+    transform: scale(1.03);
+}
+
+/* Ending navbar */
+
+/* Home  */
+.home {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home h1 {
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.home h3 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.home p {
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    height: 50px;
+    width: 50%;
+    margin-top: 10px;
+
+}
+
+.login input {
+    width: 70%;
+    height: 50px;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid gray;
+    color: white;
+    margin-left: 10px;
+    background: rgba(54, 53, 53, 0.579);
+}
+
+.login button {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    border-radius: 8px;
+    height: 50px;
+    width: 30%;
+    cursor: pointer;
+    transition: 03s;
+}
+
+.login button:hover {
+    background-color: rgb(165, 3, 3);
+    color: white;
+    transform: scale(1.03);
+}
+
+/* Ending Home css */
+
+/* Main */
+
+main {
+    min-height: 100vh;
+    margin-top: 50px;
+
+}
+
+.trending-movies {
+    height: 50%;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.trending-moviess h1 {
+    padding-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    height: 80%;
+    padding-left: 20px;
+}
+
+.card {
+    height: 250px;
+    width: 200px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.feature {
+    height: 50%;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.feature h2 {
+    padding-bottom: 20px;
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.feature-cards {
+    min-height: 260px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.feature-card {
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(54, 6, 79), rgb(83, 10, 90));
+    position: relative;
+}
+
+.feature-card img {
+    width: 60px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+
+}
+
+.feature-card h1 {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.feature-card p {
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* Ending Main */
+
+/* Section */
+
+section {
+    height: 80vh;
+
+}
+
+section h2 {
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+#faq {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.FAQ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: rgb(160, 156, 156);
+    padding: 20px;
+    font-size: 13px;
+    background-color: rgb(36, 35, 35);
+    cursor: pointer;
+    height: 5rem;
+}
+
+
+.FAQ:hover {
+    background: rgb(67, 63, 63);
+}
+
+/* ending secttion */
+
+/* midd-div */
+.midd-div {
+    height: 180px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.midd-div p {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.midd-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+    height: 50px;
+
+}
+
+.midd-input input {
+    width: 70%;
+    height: 50px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid gray;
+    color: white;
+
+}
+
+.midd-input button {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    border-radius: 8px;
+    width: 30%;
+    height: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.midd-input button:hover {
+    background-color: rgb(165, 3, 3);
+    color: white;
+    transform: scale(1.03);
+}
+
+/* ending midd-div */
+/* footer */
+footer {
+    min-height: 60vh;
+}
+
+#footer {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#footer h5 {
+    margin-top: 50px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: rgb(205, 193, 193);
+}
+
+#footer h5 span {
+    text-decoration: underline;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.footer ul {
+    list-style: none;
+    color: gray;
+
+}
+
+.footer li {
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer li:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#footer h4 {
+    margin-bottom: 50px;
+    color: rgb(174, 169, 169);
+}
+
+#footer p {
+    margin-bottom: 50px;
+    color: gray;
+}
+
+#footer select {
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    padding: 5px;
+    width: 100px;
+    margin-right: 2px;
+    background: transparent;
+    color: white;
+}
+
+/* ending footer */
+
+@media(max-width:768px) {
+
+
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feature-cards {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .login {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .login input {
+        width: 100%;
+    }
+
+    .login button {
+        width: 100%;
+
+    }
+
+    .midd-input {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .midd-input input,
+    .midd-input button {
+        width: 100%;
+    }
+}
